@@ -1,0 +1,6 @@
+<h1 class="title is-1">Posts</h1>
+<hr>
+<% site.posts.forEach((post) => { %>
+  <a href="<%- url_for(post.path) %>"><%- post.title %></a>
+  <hr>
+<% }) %>
